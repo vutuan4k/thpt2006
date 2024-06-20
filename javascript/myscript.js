@@ -49,7 +49,7 @@ theTime.add({
 	update: function(percent) {
 		var thePercent = Math.round(percent.progress);
 		// Nội dung của nút bên dưới
-		document.querySelector('.container .sup').innerHTML= "Sao trái tim các em đập nhanh thế " + (thePercent+899);
+		document.querySelector('.container .sup').innerHTML= "Sao thời gian trôi nhanh thế nhỉ " + (thePercent+2023);
 	}
 });
 theTime.add({
@@ -172,26 +172,7 @@ getclickf.addEventListener('click', function(){
 	theTime2.add({
 		targets: theLetter,
 		opacity: [0,1],
-		easing: 'easeInOutQuint',
-		offset: "-=400ms",
-		duration: 200,
-		complete: function() {
-			var drag = anime({
-				targets: theLetter,
-				translateY: [-4,4],
-				direction: 'alternate',
-				duration: 600,
-				loop: true
-			})
-		}
-	});
-});
-
-var cantho =document.querySelector('.main');
-cantho.insertAdjacentHTML('afterend', '<div class="author mt-5"><div class="row"><div class="col-12"><div class="me text-danger text-right"></div></div></div></div>');
-
-// Phần popup khi bạn nhấn vào nút "Nhịp tim của anh"
-document.querySelector('.Description .modal-title').innerHTML = '<i class="far fa-comment-alt"></i>&nbsp;Nhịp tim như vậy là tại vì:';
+		easing: 'easeInOuvì:';
 document.querySelector('.Description .modal-body').innerHTML = 'Các em sắp thi thpt quốc gia đó<i class="fas fa-heart"></i> ';
 var author = document.querySelector('.author .me');author.style.opacity = "0.5";
 
